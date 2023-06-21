@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        margin: 240px;
+        margin-left: 650px;
+    }
+
+    .inner {
+        margin-left: 150px;
+        top: 120px;
+    }
+</style>
+
+
+<body>
+    <div class="main">
+        <!-- class="image is-50x50" -->
+        <figure>
+            <img style="position: absolute;width:90px;height:90px"
+                src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+        </figure>
+        <!-- class="column is-offset-4 is-4" -->
+        <div class="inner">
+
+            <span class="title">{{ weather.City }} </span>
+            <br>
+            <span class="subtitle"> {{ weather.Temp }}</span>
+            <br> {{ weather.description }}
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
